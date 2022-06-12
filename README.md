@@ -18,4 +18,18 @@ Click on load balance with your credit card information
 ![image](https://user-images.githubusercontent.com/65618247/173256370-eae2c3f0-86a4-43cd-90ea-b495d8e3371b.png)
 
   
+  # Usage 
+  ```
+  <?php
+include("api.php");
+$donate = new donate();
+$donate->username = "acc mail";
+$donate->password = "password";
+$donate->walletid = "your wallet id";
+$donate->version = "trendyol version";
+$donate->login();
+//credit card no, C. Month, C. Year, CVV Code, Amount
+$donate->donateme("user cc", "mm", "yyyy", "cvv", "amount");
+  
+  ```
  
